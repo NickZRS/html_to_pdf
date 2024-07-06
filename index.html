@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de HTML para PDF</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <main class="saida" >
+        <div class="content_file">
+            <h1 class="titulo_file"></h1>
+            <h2 class="subt_file"></h2>
+            <p class="corpo_file"></p>
+        </div>
+    </main>
+
+    <main class="entrada">
+        <div class="content_base">
+            <H1>HTML to PDF</H1>
+            <h1>Digite o título do texto: </h1>
+            <input class="titulo" type="text">
+            
+            <h2>Digite o subtítulo do texto:</h2>
+            <input class="subt" type="text">
+
+            
+            <p>Digite o corpo do texto:</p>
+            <textarea rows="100" class="corpo"></textarea>
+        </div>
+        <button class="download" onclick="downloadPdf()">Download</button>
+    </main>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
